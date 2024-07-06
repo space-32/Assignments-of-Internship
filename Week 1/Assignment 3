@@ -1,0 +1,238 @@
+ASSIGNMENT 3 
+
+ 
+
+Why VS Code? 
+
+  
+
+Visual Studio Code (VS Code) has become one of the most popular integrated development environments (IDEs) for Python programming, especially in the realms of data science and machine learning. Here are the key reasons for choosing VS Code: 
+
+  
+
+Features and Benefits: 
+
+  
+
+1.Lightweight and Fast: 
+
+   - VS Code is known for its lightweight nature, making it fast and responsive compared to other full-fledged IDEs. 
+
+  
+
+2. Extensibility: 
+
+   - VS Code supports a wide range of extensions, allowing users to customize their development environment. For Python, the Python extension provides features like IntelliSense, linting, debugging, and more. 
+
+  
+
+3. Integrated Terminal: 
+
+   - The integrated terminal in VS Code allows developers to run Python scripts and manage their environment without leaving the IDE. 
+
+  
+
+4. Jupyter Notebook Support: 
+
+   - The Jupyter extension in VS Code enables seamless integration with Jupyter notebooks, which are widely used in data science and machine learning for interactive coding, data visualization, and documentation. 
+
+  
+
+5. Version Control Integration: 
+
+   - Built-in Git support allows for easy version control and collaboration, which is crucial for data science projects that often involve multiple contributors. 
+
+  
+
+6. IntelliSense and Code Navigation: 
+
+   - IntelliSense provides intelligent code completion, parameter info, and quick info, which enhance productivity and reduce errors. 
+
+   - Code navigation features like Go to Definition, Find All References, and Peek Definition make it easy to explore and understand complex codebases. 
+
+  
+
+7. Debugging Capabilities: 
+
+   - VS Code offers powerful debugging tools with breakpoints, call stacks, and an interactive console, helping developers troubleshoot and optimize their code. 
+
+  
+
+8. Integrated Data Science Tools: 
+
+   - Extensions like Pylance provide advanced type checking and type inference, which are useful in catching potential bugs early in data-heavy applications. 
+
+   - The Data Viewer allows users to inspect dataframes and other data structures directly within the IDE. 
+
+  
+
+9.Community and Support: 
+
+   - A large and active community contributes to the vast array of extensions and provides support through forums, tutorials, and documentation. 
+
+  
+
+ 
+
+Simple Python Program in VS Code 
+
+  
+
+To create a simple Python program in VS Code that prints "Hello, Python!", follow these steps: 
+
+  
+
+1. Install VS Code: 
+
+   - Download and install Visual Studio Code from [here](https://code.visualstudio.com/). 
+
+  
+
+2. Install the Python Extension: 
+
+   - Open VS Code, go to the Extensions view (Ctrl+Shift+X), and install the Python extension by Microsoft. 
+
+  
+
+3. Create a New Python File: 
+
+   - Open VS Code, click on `File` > `New File`, and save it with a `.py` extension, e.g., `hello.py`. 
+
+  
+
+4. Write the Code: 
+
+   - In `hello.py`, write the following code: 
+
+     ```python 
+
+     print("Hello, Python!") 
+
+     ``` 
+
+  
+
+5. Run the Program: 
+
+   - To run the program, you can either use the integrated terminal or the Run button provided by the Python extension.  
+
+   - Open the terminal with `Ctrl+` ` (backtick), navigate to the file directory using `cd`, and run: 
+
+     ```bash 
+
+     python hello.py 
+
+     ``` 
+
+  
+
+This will output: 
+
+``` 
+
+Hello, Python! 
+
+``` 
+
+  
+
+ 
+
+ 
+
+ 
+
+Basic Programs in Python 
+
+ 
+
+For Addition of 2 numbers 
+
+  
+
+Using Functions 
+def add (a,b): 
+  c=a+b 
+   Print(c) 
+
+add(2,3) 
+
+ 
+
+Without Function 
+   x=int(input(“Enter first number:”)) 
+   y= int(input(“Enter second number:”)) 
+   z=x + y 
+  print(“The addition is:”,z) 
+
+ 
+
+ 
+
+        2. Factorial 
+
+Using Function 
+
+   def factorial(n): 
+   if n == 0: 
+      return 1 
+   else: 
+      return n * factorial(n - 1) 
+num = int(input("Enter a number: ")) 
+result = factorial(num) 
+print(f"The factorial of {num} is {result}") 
+
+
+Without Function 
+
+num = int(input("Enter a number: ")) 
+result = 1 
+for i in range(1, num + 1): 
+
+    result *= i 
+print(f"The factorial of {num} is {result}") 
+
+ 
+
+ 
+
+ 
+
+ 
+
+     3. Check Even or Odd 
+
+Using Functions 
+
+   def check_even_odd(num): 
+  if num % 2 == 0: 
+     return f"{num} is even" 
+   else: 
+      return f"{num} is odd" 
+num = int(input("Enter a number: ")) 
+result = check_even_odd(num) 
+ print(result) 
+
+ 
+
+Without Function 
+
+   num = int(input("Enter a number: ")) 
+   if num % 2 == 0: 
+     print(f"{num} is even") 
+   else: 
+     print(f"{num} is odd") 
+
+ 
+
+                                     
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
