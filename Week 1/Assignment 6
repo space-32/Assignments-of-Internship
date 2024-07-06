@@ -1,0 +1,82 @@
+Installing a Python Library in Google Colab
+Open Google Colab: Go to Google Colab and create a new notebook.
+
+Install the Library: In a code cell, install a Python library (e.g., Pandas) using pip.
+
+!pip install pandas
+
+
+Demonstrate Usage of the Library: Write code to demonstrate the usage of the installed library. For example, create a simple DataFrame and perform a basic operation.
+
+import pandas as pd
+
+# Create a simple DataFrame
+data = {'Name': ['Alice', 'Bob', 'Charlie', 'David'],
+        'Age': [24, 27, 22, 32],
+        'City': ['New York', 'Los Angeles', 'Chicago', 'Houston']}
+
+df = pd.DataFrame(data)
+
+# Display the DataFrame
+print("DataFrame:")
+print(df)
+
+# Perform a basic operation: calculate the mean age
+mean_age = df['Age'].mean()
+print("\nMean Age:", mean_age)
+
+Inviting a Collaborator
+
+Invite Collaborator: Click on the "Share" button at the top right corner of the Colab interface.
+Enter Email Address: Enter the email address of your classmate or friend (e.g., classmate@example.com) and set the permission to "Can edit".
+Send Invitation: Click the "Send" button to invite them to collaborate on your notebook.
+Collaborative Task
+Collaborate on a Task: Work together on a simple Python code project or data analysis task. For example, you could analyze a dataset or create a plot.
+
+import matplotlib.pyplot as plt
+
+# Plot the ages of individuals
+plt.figure(figsize=(8, 4))
+plt.bar(df['Name'], df['Age'], color='skyblue')
+plt.xlabel('Name')
+plt.ylabel('Age')
+plt.title('Age of Individuals')
+plt.show()
+
+Save and Share Your Notebook
+Save to Google Drive: Click on "File" > "Save a copy in Drive" to save the notebook to your Google Drive.
+Share the Notebook: Click on the "Share" button again, and enter the email address of your instructor or peer to allow them to view or comment on your work. Set the appropriate permissions and send the invitation.
+Example Code in Google Colab
+Here's a complete example of the steps described above:
+
+# Install Pandas
+!pip install pandas
+
+# Import Pandas
+import pandas as pd
+
+# Create a simple DataFrame
+data = {'Name': ['Alice', 'Bob', 'Charlie', 'David'],
+        'Age': [24, 27, 22, 32],
+        'City': ['New York', 'Los Angeles', 'Chicago', 'Houston']}
+
+df = pd.DataFrame(data)
+
+# Display the DataFrame
+print("DataFrame:")
+print(df)
+
+# Perform a basic operation: calculate the mean age
+mean_age = df['Age'].mean()
+print("\nMean Age:", mean_age)
+
+# Import Matplotlib
+import matplotlib.pyplot as plt
+
+# Plot the ages of individuals
+plt.figure(figsize=(8, 4))
+plt.bar(df['Name'], df['Age'], color='skyblue')
+plt.xlabel('Name')
+plt.ylabel('Age')
+plt.title('Age of Individuals')
+plt.show()
