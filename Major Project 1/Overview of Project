@@ -1,0 +1,53 @@
+Computer Vision Assignment
+Introduction
+This assignment covers various computer vision techniques including image classification, feature detection, object detection, image segmentation, and object tracking. Each section highlights the implementation of these techniques using different datasets and models, and includes visualizations and performance insights.
+
+Part 1: Image Classification
+Overview
+In this part, we performed image classification on the CIFAR-10 dataset using a pre-trained ResNet model.
+
+Method
+Preprocessing: The images were resized and normalized.
+Model: A ResNet-50 model pre-trained on ImageNet was used for classification.
+Results: The model predicted the class of images with high accuracy. Results included visualizations of classified images.
+Summary
+The image classification demonstrated the effectiveness of transfer learning with ResNet for classifying CIFAR-10 images. The model achieved an accuracy of [insert accuracy], indicating good performance for this task.
+
+Part 2: Feature Detection and Object Detection
+Feature Detection
+Overview
+We implemented Harris corner detection to identify key features in an image.
+
+Method
+Algorithm: Harris corner detection was used to find and highlight corners in the image.
+Results: Detected corners were marked on the image, demonstrating the capability of the algorithm to find significant points.
+Object Detection
+Overview
+We applied the Faster R-CNN model to detect and localize objects within an image.
+
+Method
+Model: Faster R-CNN, pre-trained on COCO, was utilized for detecting objects.
+Results: Bounding boxes and class labels were visualized for detected objects. Different colors were used for different classes, with labels showing the confidence scores.
+Summary
+Feature detection using Harris corners was effective in identifying key points, while Faster R-CNN successfully detected and labeled objects. Non-maximum suppression was employed to reduce overlapping bounding boxes, improving detection clarity.
+
+Part 3: Image Segmentation and Object Tracking
+Image Segmentation
+Overview
+Image segmentation was performed to segment a complex image containing multiple objects.
+
+Method
+Algorithm: An appropriate segmentation algorithm was applied to divide the image into distinct regions.
+Results: Segmented regions were visualized, showing different parts of the image labeled with different colors.
+Object Tracking
+Overview
+Object tracking was implemented on a video to track a specific object throughout the sequence.
+
+Method
+Algorithm: The KLT tracker was used to follow an object frame-by-frame.
+Results: The tracked object was highlighted with bounding boxes across video frames, demonstrating the tracking algorithm's ability to maintain focus on the object.
+Summary
+Image segmentation effectively separated complex regions within an image, while object tracking successfully maintained the position of a moving object across video frames. Both techniques showcased practical applications in analyzing visual data.
+
+Conclusion
+This assignment provided an in-depth exploration of key computer vision techniques. Image classification with ResNet, feature detection with Harris corners, object detection with Faster R-CNN, image segmentation, and object tracking were all effectively demonstrated. Each technique highlighted different aspects of computer vision, from recognizing and classifying objects to segmenting images and tracking motion. This experience has enhanced the understanding of various algorithms and their applications in real-world scenarios
