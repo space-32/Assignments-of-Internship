@@ -1,0 +1,22 @@
+Reference Material conatins following key points:
+
+Introduction to Computer Vision: Overview of computer vision as a field within artificial intelligence that enables machines to interpret and make decisions based on visual data.
+Deep Learning for Computer Vision: How deep learning models, especially Convolutional Neural Networks (CNNs), are used to process and understand images.
+Applications: Common applications might include object detection, image classification, facial recognition, and image segmentation.
+Tools and Libraries: Usage of TensorFlow, Keras, and Python for implementing computer vision tasks.
+
+
+
+3-Real-World Applications of Computer Vision
+
+Application 1: Self-driving cars use computer vision to interpret data from cameras and sensors to detect pedestrians, other vehicles, and road signs.
+Impact: Enhances safety and navigational accuracy, potentially reducing traffic accidents.
+Healthcare:
+
+Application 2: Medical imaging technologies like MRI and CT scans use computer vision for detecting anomalies, tumors, and other medical conditions.
+Impact: Assists doctors in early diagnosis and treatment planning, improving patient outcomes.
+Retail:
+
+Application 3: Automated checkout systems in retail use computer vision for recognizing products and managing inventory.
+Impact: Streamlines the shopping experience and reduces checkout time, improving customer satisfaction.
+
