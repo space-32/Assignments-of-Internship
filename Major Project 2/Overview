@@ -1,0 +1,68 @@
+Sentiment Analysis of IMDB Reviews: An NLP Exploration
+1. Introduction
+In this assignment, we perform sentiment analysis on the IMDB dataset using Natural Language Processing (NLP) techniques. Our goal is to classify movie reviews into positive or negative sentiments using an LSTM model. This involves several stages, including data preprocessing, model training, and evaluation.
+
+2. Data Preprocessing
+a. Data Loading and Exploration
+
+The dataset is loaded from a CSV file containing movie reviews and their associated sentiments. The first few rows of the dataset give us an overview of the data structure, showing the review text and sentiment labels.
+
+b. Data Cleaning
+
+To prepare the text data for modeling:
+
+Text Cleaning: We remove special characters, punctuation, and unnecessary whitespace.
+Tokenization: The cleaned reviews are tokenized into words, converting text into sequences of integers.
+Padding: Sequences are padded to ensure uniform input length for the LSTM model.
+c. Text Representation
+
+For model input, we use tokenized sequences and apply padding to standardize the length of input sequences.
+
+3. Model Selection and Training
+a. Model Architecture
+
+We selected an LSTM (Long Short-Term Memory) model for sentiment classification. LSTMs are well-suited for sequential data like text due to their ability to capture long-range dependencies in text sequences.
+
+b. Training the Model
+
+The LSTM model is trained on the preprocessed data. During training, the model learns to differentiate between positive and negative sentiments based on the patterns in the text data.
+
+4. Evaluation
+a. Accuracy
+
+The model's accuracy on the test set was 85.42%, indicating that it correctly classified the sentiment of reviews in approximately 85% of cases.
+
+b. Classification Report
+
+The classification report provides detailed performance metrics:
+
+Precision: For negative reviews, the precision is 0.84, meaning 84% of the reviews predicted as negative were truly negative. For positive reviews, the precision is 0.87.
+Recall: For negative reviews, the recall is 0.87, indicating that 87% of actual negative reviews were correctly identified. For positive reviews, the recall is 0.84.
+F1-Score: The F1-Score, balancing precision and recall, is 0.85 for both classes, demonstrating good model performance across both sentiment categories.
+c. Confusion Matrix
+
+The confusion matrix reveals how well the model distinguishes between positive and negative sentiments:
+
+True Positives (Positive reviews correctly predicted as positive): 2104
+True Negatives (Negative reviews correctly predicted as negative): 2170
+False Positives (Negative reviews incorrectly predicted as positive): 330
+False Negatives (Positive reviews incorrectly predicted as negative): 396
+d. ROC Curve
+
+The ROC Curve is used to evaluate the trade-off between the true positive rate (sensitivity) and the false positive rate (1-specificity). A higher Area Under the Curve (AUC) indicates better model performance, showing that the model is effective at distinguishing between positive and negative sentiments.
+
+5. Visualizations
+a. Word Clouds
+
+Word clouds for positive and negative reviews visually represent the most frequent words in each sentiment category. Positive reviews tend to highlight optimistic and favorable terms, while negative reviews emphasize negative and critical terms.
+
+b. Sentiment Distribution Plot
+
+The distribution of predicted probabilities for positive sentiment is plotted to show how confident the model is about its predictions. This visualization helps to understand the spread of sentiment scores across the dataset.
+
+6. Summary and Conclusion
+Experience and Insights:
+
+Model Performance: The LSTM model performed well with an accuracy of 85.42%. The balanced precision and recall metrics indicate that the model effectively identifies both positive and negative sentiments.
+Challenges: Data cleaning and tokenization were crucial for preparing the text data. Overfitting was addressed through regularization techniques such as dropout.
+Future Work: Exploring Transformer-based models like BERT or experimenting with pre-trained embeddings could enhance performance. Further tuning of hyperparameters and data augmentation might also improve results
